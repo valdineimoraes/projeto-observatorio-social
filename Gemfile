@@ -9,6 +9,7 @@ gem 'jquery-rails', '~> 4.3.1'
 gem 'turbolinks',   '~> 5.0.1'
 gem 'bootstrap', '~> 4.0.0.beta'
 gem 'pg', '0.18.4' 
+gem 'devise'
 
 group :development, :test do
   gem 'byebug', platform: :mri
