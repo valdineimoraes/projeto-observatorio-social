@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title><%= full_title(yield(:head_title)) %></title>
+			<%= csrf_meta_tags %>
+			<%= stylesheet_link_tag    'session', media: 'all',
+			'data-turbolinks-track': 'reload' %>
+			<%= javascript_include_tag 'session',
+			'data-turbolinks-track': 'reload' %>
+		</head>
+		<body>
+			
+			<div class="container">
+				<div class="vertical-centering horizontal-centering">
+					<%= render 'shared/flash_messages'%>
+					<%= yield %>
+				</div> <!-- .vertical-centering .horizontal-centering -->
+			</div> <!-- home-index -->
+		</body>
+	</html>
