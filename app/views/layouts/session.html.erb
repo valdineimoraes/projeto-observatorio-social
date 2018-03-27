@@ -11,10 +11,26 @@
 		<body>
 			
 			<div class="container">
-				<div class="vertical-centering horizontal-centering">
-					<%= render 'shared/flash_messages'%>
-					<%= yield %>
-				</div> <!-- .vertical-centering .horizontal-centering -->
+				<div class="row row-logo vertical-centering ">
+					
+					<div class="col-md-4 logo-sessions" >
+						
+							
+								<%= link_to image_tag("os-logo.png", alt: "Observatorio Social logo", class: 'logos os-logo'), 'http://google.com' %>
+							
+								<%= link_to image_tag("utfpr-logo.jpg", alt: "Observatorio Social logo", class: 'logos utfpr-logo'), 'http://google.com' %>
+							
+						
+					</div>
+
+
+					<div class="col-md-8 form-sessions">
+						<div class="vertical-centering text-align-left">
+							<%= render 'shared/flash_messages'%>
+							<%= yield %>
+						</div> <!-- .vertical-centering .horizontal-centering -->
+					</div>
+				</div>
 			</div> <!-- home-index -->
 		</body>
 	</html>
